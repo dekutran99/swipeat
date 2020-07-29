@@ -24,28 +24,5 @@ router.get('/room', (req, res) => {
 	sendComponentFromServer(htmlContent, res);
 })
 
-// router.get('/places', (req, res) => {
-
-// 	let requestOptions = {
-// 		method: 'GET',
-// 		redirect: 'follow'
-// 	};
-
-// 	// places api
-// 	fetch("https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyCMa_633zIvLQT2eqSMZY3q7uRXf5w7ZF0&location=49.284390, -123.128996&radius=1500&type=restaurant", requestOptions)
-// 		.then(response => {
-// 			if (response.ok) {
-// 				return response.json();
-// 			} else {
-// 				return {};
-// 			}
-// 		}).then(data => {
-// 			if (Object.keys(data).length === 0) {
-// 				return res.send("Something is wrong");
-// 			} else {
-// 				return res.send(data['results']);
-// 			}
-// 		})
-// })
 
 export default router;
