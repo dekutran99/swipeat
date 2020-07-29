@@ -10,3 +10,7 @@ yarn development
 ```
 yarn production
 ```
+### Clean built files
+```
+yarn clean-build
+```
